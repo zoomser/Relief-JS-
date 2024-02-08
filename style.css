@@ -1199,15 +1199,31 @@ gap: 23px;
     height: 50px;
     padding: 25px;
 }
+.land_pic_all1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 1250px;
+}
 .land_pic_all{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
     gap: 20px;
     width: 1063px;
     height: 936px;
     margin-left: 190px;
     margin-top: 45px;
+}
+.land_rec510_all{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: row;
+  
 }
 .land_pic_txt{
     color: #000;
@@ -1273,7 +1289,21 @@ gap: 23px;
     gap: 24px;
     margin-top: 59px;
 }
-.land_reviews_oval{
+.land_reviews_oval1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.land_reviews_oval2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.land_reviews_oval3{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1389,7 +1419,9 @@ footer{
     right: 100px;
     bottom: 10px;
 }
-
+.land_arrow_down{
+    display: none;
+}
 
 /* BURGER*/
 .burger{
@@ -1843,6 +1875,8 @@ nav{
 
 .garden_fon{
     background: none;
+    width: 264px;
+    height: 600px;
 }
 .garden_line_txt{
     font-size: 14px;
@@ -1850,11 +1884,11 @@ nav{
 .garden_line_project{
     flex-direction: column-reverse;
     justify-content: center;
-  align-items: center;
-  gap: 1px;
-  padding: 0;
-  width: 391px;
-  margin-left: 0;
+    align-items: center;
+    gap: 1px;
+    padding: 0;
+    width: 391px;
+    margin-left: 0;
 }
 .garden_line_logo{
     margin: 0 auto;
@@ -1926,7 +1960,90 @@ nav{
     width: 264px;
     height: 357px;
     margin-left: 70px;
-    
-    
+
+}
+
+
+/* <!-- LANDSCAPE --> */
+
+.land_line_project{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+    padding: 0;
+    width: 391px;
+    margin-left: 0;
+}
+.land_line_txt{
+    font-size: 14px;
+    margin-left: 10px;
+}
+.land_line_logo_blok{
+    width: 250px;
+}
+.land_line_logo{
+    margin-left: 117px;
+}
+.land_line{
+    width: 250px;
+    margin-left: 10px;
+}
+.land_rectangle{
+    width: 265px;
+    height: 114px;
+    margin-left: 73px;
+}
+.land_rectangle_txt{
+    font-size: 12px;
+    width: 246px;
+    height: 93px;
+    line-height: 14px;
+    padding: 13px;
+}
+.land_span2{
+    display: none;
+}
+
+.land_pic_all{
+    width: 265px;
+    margin-left: 75px;
+}
+.land_rec510_all{
+    display: none;
+}
+.land_arrow_down{
+    display: block;
+    margin-left: 195px;
+    margin-top: 20px;
+}
+.land_reviews_oval2, .land_reviews_oval3{
+    display: none;
+}
+.land_reviews_oval1{
+    flex-direction: row;
+    background: rgba(239, 239, 239, 0.61);
+    width: 214px;
+    height: 274px;
+}
+.mixail_txt{
+    margin: 0 50px 0 20px;
+}
+.land_reviews1{
+    margin: 0 auto;
+    width: 199px;
+    height: 192px;
+    font-size: 13px;
+}
+.land_ellipse1{
+    width: 51px;
+    height: 51px;
+}
+.land_span1_txt{
+    display: none;
+}
+.land_pic_all1{
+    width: 265px;
+    margin-left: 35px;
 }
 }
