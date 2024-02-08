@@ -553,7 +553,33 @@ height: 11px;
     margin-left: 117px;
     margin-top: 30px;
 }
-.slide_summa{
+.slide3_summa{
+    color: #FFDF9E;
+    text-align: justify;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 151px;
+    height: 20px;
+    margin-left: 780px;
+    margin-top: 13px;
+}
+.slide1_summa{
+    color: #FFDF9E;
+    text-align: justify;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 151px;
+    height: 20px;
+    margin-left: 780px;
+    margin-top: 13px;
+}
+.slide2_summa{
     color: #FFDF9E;
     text-align: justify;
     font-family: Roboto;
@@ -592,11 +618,29 @@ height: 11px;
     background-position:100%;
     background-size: cover;
 }
-.big_arrow_left{
+.big_arrow3_left{
     position: relative;
     bottom: 310px;
 }
-.big_arrow_right{
+.big_arrow3_right{
+    position: relative;
+    bottom: 303px;
+    left: 1059px;
+}
+.big_arrow1_left{
+    position: relative;
+    bottom: 310px;
+}
+.big_arrow1_right{
+    position: relative;
+    bottom: 303px;
+    left: 1059px;
+}
+.big_arrow2_left{
+    position: relative;
+    bottom: 310px;
+}
+.big_arrow2_right{
     position: relative;
     bottom: 303px;
     left: 1059px;
@@ -1541,5 +1585,348 @@ nav{
 }
 .our_line_logo{
     margin-left: 157px;
+}
+.our_line_logo_blok{
+    width: 181px;
+}
+.our_line_logo{
+    margin-left: 77px;
+}
+.our_line{
+    margin-left: 1px;
+}
+
+.our_img_all{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.rec51{
+    width: 263px;
+    height: 333px;
+    margin: 0 auto;
+}
+.our_rec51{
+    width: 263px;
+    height: 32px;
+    position: relative;
+    top: 301px;
+}
+.rec53{
+    width: 122px;
+    height: 100px;
+}
+.rec54{
+    width: 130px;
+    height: 100px;
+}
+.our_rec53{
+    width: 122px;
+    height: 18px;
+    position: relative;
+    top: 82px;    
+}
+.our_rec51_txt{
+    font-size: 12px;
+}
+.our_rec54{
+    width: 130px;
+    height: 18px;
+    position: relative;
+    top: 82px;
+}
+.rec53_54{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    margin-left: 75px;
+}
+/* slide_three */
+.slide_three{
+    width: 319px;
+    height: 450px;
+    position: absolute;
+    right: 44px;
+}
+.slide_close_icon3{
+    position: relative;
+    left: 297px;
+    top: 9px;
+}
+.slide3_line_logo{
+    margin-left: 647px;
+}
+.slide_line_project{
+    flex-direction: column-reverse;
+    gap: 7px;
+}
+.slide3_line{
+    width: 236px;
+    margin-left: 550px;
+}
+.slide_line_txt{
+    margin-right: 88px;
+    gap: 1px;
+}
+.slide_pic3{
+    width: 263px;
+    height: 137px;
+}
+.slide_pic1_svg_ul3{
+    display: block;
+    margin-left: 30px;
+    margin-top: 11px;
+}
+.slide3_svg{
+    display: none;
+}
+.slide_ul3{
+    list-style-type: disc;
+}
+.slide_ul_li{
+    font-size: 12px;
+}
+.slide3_ul1{
+    gap: 1px;
+    margin-bottom: 1px;
+}
+.slide3_ul2{
+    gap: 1px;
+    margin-bottom: 1px;
+}
+.slide3_ul3{
+    gap: 1px;
+    margin-bottom: 1px;
+}
+.slide_svg_ul3{
+    margin-left: 17px;
+    margin-top: 10px;
+}
+.slide3_bottom{
+    display: none;
+}
+.big_arrow3_left{
+    width: 26px;
+    height: 30px;
+    bottom: 245px;
+}
+.big_arrow3_right{
+    width: 26px;
+    height: 30px;
+    position: relative;
+    bottom: 242px;
+    left: 266px;
+}
+.small_arrow_left{
+    display: none;
+}
+.small_arrow_right{
+    display: none;
+}
+.slide3_summa{
+    margin-left: 51px;
+    margin-top: 8px;
+    font-size: 12px;
+}
+/* .slide_one */
+.slide_one{
+    width: 319px;
+    height: 450px;
+    position: absolute;
+    right: 44px;
+}
+.slide_close_icon1{
+    position: relative;
+    left: 297px;
+    top: 9px;
+}
+.slide_line_logo{
+    margin-left: 723px;
+}
+.slide_line_txt{
+    margin-right: 117px;
+}
+.slide_line{
+    width: 236px;
+    margin-left: 622px;
+}
+.slide_pic1{
+    width: 263px;
+    height: 137px;
+}
+.slide_pic1_svg_ul{
+    display: block;
+    margin-left: 30px;
+    margin-top: 11px;
+}
+.slide_ul{
+    gap: 1px;
+    margin-top: 57px;
+    margin-right: 43px;
+    list-style-type: disc;
+}
+.slide_svg{
+    display: none;
+}
+.slide_bottom{
+    display: none;
+}
+.slide_svg_ul{
+    height: 0;
+}
+.slide1_summa{
+    margin-left: 70px;
+    margin-top: 195px;
+}
+.big_arrow1_left{
+    width: 26px;
+    height: 30px;
+    bottom: 245px;
+}
+.big_arrow1_right{
+    width: 26px;
+    height: 30px;
+    position: relative;
+    bottom: 242px;
+    left: 266px;
+}
+
+/* .slide_two */
+
+.slide_two{
+    width: 319px;
+    height: 450px;
+    position: absolute;
+    right: 44px;
+}
+.slide_close_icon2{
+    position: relative;
+    left: 297px;
+    top: 9px;
+}
+.slide_pic2{
+    width: 263px;
+    height: 137px;
+}
+.slide_pic1_svg_ul2{
+    display: block;
+    margin-left: 30px;
+    margin-top: 11px;
+}
+.slide_ul2{
+    gap: 1px;
+    margin-top: 12px;
+    margin-right: 0;
+    list-style-type: disc;
+}
+.big_arrow2_left{
+    width: 26px;
+    height: 30px;
+    position: relative;
+    bottom: 245px;
+}
+.big_arrow2_right{
+    width: 26px;
+    height: 30px;
+    position: relative;
+    bottom: 242px;
+    left: 264px;
+}
+.slide2_bottom{
+    display: none;
+}
+.slide2_summa{
+    margin-left: 70px;
+    margin-top: 136px;
+}
+/* <!-- GARDEN MAINTENANCE --> */
+
+.garden_fon{
+    background: none;
+}
+.garden_line_txt{
+    font-size: 14px;
+}
+.garden_line_project{
+    flex-direction: column-reverse;
+    justify-content: center;
+  align-items: center;
+  gap: 1px;
+  padding: 0;
+  width: 391px;
+  margin-left: 0;
+}
+.garden_line_logo{
+    margin: 0 auto;
+}
+.garden_line{
+    width: 265px;
+    margin: 0 auto;
+}
+.garden_fon2{
+    width: 265px;
+    height: 108px;
+    margin-left: 70px;
+}
+.garden_fon2_txt{
+    width: 238px;
+    height: 81px;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.7px;
+    padding: 7px 15px;
+}
+.garden_fon2_txt2{
+    display: none;
+}
+.garden_fon2_txt4{
+    display: none
+}
+.garden_fon3{
+    width: 264px;
+    height: 357px;
+    margin-left: 70px;
+}
+.garden_season{
+    width: 235px;
+    height: 45px;
+}
+.garden_season_h{
+    font-size: 14px;
+}
+.garden_autumn{
+    width: 235px;
+    height: 45px;
+}
+.garden_autumn_h{
+    font-size: 14px;
+}
+.garden_spring{
+    width: 235px;
+    height: 45px;
+}
+.garden_spring_h{
+    font-size: 14px;
+}
+.garden_summer{
+    width: 235px;
+    height: 45px;
+}
+.garden_summer_h{
+    font-size: 14px;
+}
+.garden_text_bottom1{
+    display: none;
+}
+.garden_text_bottom2{
+    display: none;
+}
+.garden_fon3{
+    
+    width: 264px;
+    height: 357px;
+    margin-left: 70px;
+    
+    
 }
 }
