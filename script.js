@@ -1,3 +1,27 @@
+// BURGER
+
+// поиск элементов
+let burger=document.querySelector('.burger')
+let menu=document.querySelector('.nav_ul')
+// действие к переменной бургер
+burger.addEventListener("click",function(){
+// добавляем класс к элементу toggle(тумблер)
+menu.classList.toggle("show")
+// делаем полосочки в крестик
+burger.classList.toggle("active_burger")
+})
+
+// Text about scrol
+let about_text_company2=document.querySelectorAll(".about_text_company2")
+let about_text_span=document.querySelector(".about_text_span")
+let about_strela_down=document.querySelector(".about_strela_down")
+
+about_strela_down.addEventListener("click",function () {
+    about_text_span.classList.add("about_text_company2");
+    about_text_span.style.display="block";
+    
+    
+});
 // поиск нужных элементов из html
 let nav_button=document.querySelector(".nav_button");
 let application=document.querySelector(".application");
@@ -110,17 +134,18 @@ slide_close_icon3.addEventListener("click",function(){
 })
 
 // BIG SLIDERS
-let big_arrow_left=document.querySelectorAll(".big_arrow_left")
-let big_arrow_right=document.querySelectorAll(".big_arrow_right")
+let big_arrow3_left=document.querySelectorAll(".big_arrow3_left,.big_arrow1_left,.big_arrow2_left")
+let big_arrow3_right=document.querySelectorAll(".big_arrow3_right,.big_arrow1_right,.big_arrow2_right")
+
 
 for(let x=0; x<slides.length; x++){
-    big_arrow_right[x].addEventListener("click",function() {
+    big_arrow3_right[x].addEventListener("click",function() {
         slides.forEach(function(ssss){
             ssss.classList.remove("slide_show")
         })
         slides[x+1].classList.add("slide_show")
     })
-    big_arrow_left[x].addEventListener("click",function() {
+    big_arrow3_left[x].addEventListener("click",function() {
         slides.forEach(function(ssss){
             ssss.classList.remove("slide_show")
         })
@@ -140,33 +165,10 @@ for(let y=0; y<slide3_bottom.length; y++){
     slide3_bottom[y].addEventListener("click", function(){
         slide_pic3.style.background=`url("img/87d9f7d3de6d5f89221a16f416968924.jfif"), lightgray 50% / cover no-repeat`
     })
-}
+};
 
 
 
 
-// BURGER
 
-// поиск элементов
-let burger=document.querySelector('.burger')
-let menu=document.querySelector('.nav_ul')
-// действие к переменной бургер
-burger.addEventListener("click",function(){
-// добавляем класс к элементу toggle(тумблер)
-menu.classList.toggle("show")
-// делаем полосочки в крестик
-burger.classList.toggle("active_burger")
-})
-
-// Text about scrol
-let about_text_company2=document.querySelectorAll(".about_text_company2")
-let about_text_span=document.querySelector(".about_text_span")
-let about_strela_down=document.querySelector(".about_strela_down")
-
-about_strela_down.addEventListener("click",function () {
-    about_text_span.classList.add("about_text_company2");
-    about_text_span.style.display="block";
-    
-    
-})
 
