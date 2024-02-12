@@ -333,6 +333,9 @@ height: 11px;
     margin: 15px 33px;
     padding: 5px;
 }
+.about_strela_down{
+    display: none;
+}
 
 /* OUR PROJECTS */
 
@@ -1599,6 +1602,7 @@ nav{
     display: none;
 }
 .about_strela_down{
+    display: block;
     position: absolute;
     left: 196px;
     top: 931px;
@@ -1744,13 +1748,13 @@ nav{
 .big_arrow3_left{
     width: 26px;
     height: 30px;
-    bottom: 245px;
+    bottom: 243px;
 }
 .big_arrow3_right{
     width: 26px;
     height: 30px;
     position: relative;
-    bottom: 242px;
+    bottom: 237px;
     left: 266px;
 }
 .small_arrow_left{
