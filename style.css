@@ -1431,7 +1431,7 @@ footer{
 /* MEDIASCREEN */
 @media only screen and (min-width:320px) and (max-width:412px){
 .wrapper{
-        width: 100%;
+        width: 412px;
     }
 .burger{
     display: flex;
@@ -1499,17 +1499,21 @@ nav{
 /* Главная картинка */
 .shapka_img{
     background: url("img/glavnayapikcha.png") no-repeat;
-    width: min(100%,767px);
+    width: min(100%,412px);
     height: 550px;
     background-position: 32% 63%;
 
+}
+.nav_logo{
+    display: block;
+    width: 164px;
 }
 .logotip{
     width: 178px;
     height: 150px;
     box-shadow: 0px 7px 4px 0px rgba(0, 0, 0, 0.40);
     margin-top: 76px;
-    margin-right: 737px;
+    
 }
 .nav_text_blago{
     font-size: 14px;
@@ -1922,32 +1926,33 @@ nav{
     margin-left: 70px;
 }
 .garden_season{
-    width: 235px;
-    height: 45px;
+    width: 85px;
+    height: 25px;
 }
 .garden_season_h{
-    font-size: 14px;
+    font-size: 12px;
+    line-height: 11px;
 }
 .garden_autumn{
-    width: 235px;
-    height: 45px;
+    width: 85px;
+    height: 25px;
 }
 .garden_autumn_h{
-    font-size: 14px;
+    font-size: 12px;
 }
 .garden_spring{
-    width: 235px;
-    height: 45px;
+    width: 85px;
+    height: 25px;
 }
 .garden_spring_h{
-    font-size: 14px;
+    font-size: 12px;
 }
 .garden_summer{
-    width: 235px;
-    height: 45px;
+    width: 85px;
+    height: 25px;
 }
 .garden_summer_h{
-    font-size: 14px;
+    font-size: 12px;
 }
 .garden_text_bottom1{
     display: none;
@@ -1955,12 +1960,34 @@ nav{
 .garden_text_bottom2{
     display: none;
 }
+.garden_seasons_blok{
+    margin: 32px 0 0 10px;
+}
 .garden_fon3{
-    
-    width: 264px;
+    width: 400px;
     height: 357px;
-    margin-left: 70px;
-
+    margin-left: 3px;
+}
+.garden_season_txt2{
+    width: 280px;
+}
+.garden_osen_txt2{
+    width: 280px;
+    text-align: left;
+}
+.garden_vesna_txt2{
+    width: 280px;
+    text-align: left;
+    line-height: 20px;
+}
+.garden_leto_txt1{
+    line-height: 12px;
+  margin-bottom: 7px;
+}
+.garden_leto_txt2{
+    width: 280px;
+    text-align: left;
+    line-height: 16px;
 }
 
 
@@ -2045,5 +2072,44 @@ nav{
 .land_pic_all1{
     width: 265px;
     margin-left: 35px;
+}
+
+/* footer */
+
+footer{
+    width: min(100%,412px);
+    background-position: 98% 110%;
+    
+    height: 363px;
+}
+.foot_tel_icon_all{
+width: 134px;
+}
+.footer_all{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.foot_tel_txt2{
+    width: 150px;
+}
+.foot_blok1{
+    gap: 12px;
+}
+.foot_email_txt1{
+    margin-top: 15px;
+}
+.footer_socseti_icon{
+    justify-content: center;
+    gap: 15px;
+    margin-top: 21px;
+}
+.footer_location{
+    margin-top: 22px;
+}
+.footer_studio_txt{
+    right: 24px;
+    bottom: 1px;
 }
 }
