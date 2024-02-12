@@ -1432,7 +1432,7 @@ footer{
 }
 
 /* MEDIASCREEN */
-@media only screen and (min-width:320px) and (max-width:412px){
+@media only screen and (max-width:412px){
 .wrapper{
         width: 412px;
     }
@@ -1888,6 +1888,9 @@ nav{
 }
 .garden_line_txt{
     font-size: 14px;
+}
+.garden_line_logo_blok {
+    width: 263px;
 }
 .garden_line_project{
     flex-direction: column-reverse;
