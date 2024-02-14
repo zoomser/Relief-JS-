@@ -13,7 +13,7 @@ body{
 .wrapper{
     margin: 0 auto;
     width: min(100%,1440px);
-    background-color: #b7c4bc;
+    background: radial-gradient(#34b58a8c, #2f1e6f79);
 }
 nav{
     
