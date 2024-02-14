@@ -8,8 +8,54 @@ burger.addEventListener("click",function(){
 // добавляем класс к элементу toggle(тумблер)
 menu.classList.toggle("show")
 // делаем полосочки в крестик
-burger.classList.toggle("active_burger")
+burger.classList.toggle("active_burger");
 })
+// по клику в любом месте окна закрывается бургер
+window.addEventListener('click', function (e) {
+    if (!burger.contains(e.target) && !menu.contains(e.target)) {
+        // Ниже код, который нужно выполнить при срабатывании события.
+        burger.classList.remove('active_burger');
+        menu.classList.remove('show');
+    }
+});
+
+
+// <!-- progress-bar start -->
+const showOnPx = 100;
+const backToTopButton = document.querySelector(".back-to-top");
+const pageProgressBar = document.querySelector(".progress-bar");
+
+const scrollContainer = () => {
+  return document.documentElement || document.body;
+};
+
+const goToTop = () => {
+  document.body.scrollIntoView({
+    behavior: "smooth"
+  });
+};
+
+document.addEventListener("scroll", () => {
+  console.log("Scroll Height: ", scrollContainer().scrollHeight);
+  console.log("Client Height: ", scrollContainer().clientHeight);
+
+  const scrolledPercentage =
+    (scrollContainer().scrollTop /
+      (scrollContainer().scrollHeight - scrollContainer().clientHeight)) *
+    100;
+
+  pageProgressBar.style.width = `${scrolledPercentage}%`;
+
+  if (scrollContainer().scrollTop > showOnPx) {
+    backToTopButton.classList.remove("hidden");
+  } else {
+    backToTopButton.classList.add("hidden");
+  }
+});
+
+backToTopButton.addEventListener("click", goToTop);
+
+// <!-- progress-bar end -->
 
 // Text about scrol
 let about_text_company2=document.querySelectorAll(".about_text_company2")
@@ -22,6 +68,8 @@ about_strela_down.addEventListener("click",function () {
     
     
 });
+
+// ФОРМА ЗАЯВКИ
 // поиск нужных элементов из html
 let nav_button=document.querySelector(".nav_button");
 let application=document.querySelector(".application");
@@ -167,43 +215,84 @@ for(let y=0; y<slide3_bottom.length; y++){
     })
 };
 
+// REVIEWS ARROWS
 
+// let orange_left_arrow=document.querySelectorAll(".orange_left_arrow")
+// let orange_right_arrow=document.querySelectorAll(".orange_right_arrow")
+let land_reviews_oval=document.querySelectorAll(".land_reviews_oval1,.land_reviews_oval2,.land_reviews_oval3")
 
-// <!-- progress-bar -->
-const showOnPx = 100;
-const backToTopButton = document.querySelector(".back-to-top");
-const pageProgressBar = document.querySelector(".progress-bar");
+// for(let r=0; r<land_reviews_oval.length; r++){
+//     orange_right_arrow[r].addEventListener("click",function() {
+//         land_reviews_oval.forEach(function(sw){
+//             sw.classList.remove("reviews_all_show");
+            
+//         })
+//         land_reviews_oval[r+1].classList.add("reviews_all_show");
+//         land_reviews_oval[r].classList.toggle("reviews_all_show1"); 
+//     })
+//     orange_left_arrow[r].addEventListener("click",function() {
+//         land_reviews_oval.forEach(function(sw){
+//             sw.classList.remove("reviews_all_show")
+            
+//         })
+//         land_reviews_oval[r-1].classList.add("reviews_all_show");
+//         land_reviews_oval[r].classList.toggle("reviews_all_show1");
+//     })
+// };
 
-const scrollContainer = () => {
-  return document.documentElement || document.body;
-};
-
-const goToTop = () => {
-  document.body.scrollIntoView({
-    behavior: "smooth"
+document.addEventListener("DOMContentLoaded", function () {
+    let carousel = document.querySelector(".carousel");
+    let items = carousel.querySelectorAll(".item");
+    let dotsContainer = document.querySelector(".dots");
+  
+    // Insert dots into the DOM
+    items.forEach((_, index) => {
+      let dot = document.createElement("span");
+      dot.classList.add("dot");
+      if (index === 0) dot.classList.add("active");
+      dot.dataset.index = index;
+      dotsContainer.appendChild(dot);
+    });
+  
+    let dots = document.querySelectorAll(".dot");
+  
+    // Function to show a specific item
+    function showItem(index) {
+      items.forEach((item, idx) => {
+        item.classList.remove("active");
+        dots[idx].classList.remove("active");
+        if (idx === index) {
+          item.classList.add("active");
+          dots[idx].classList.add("active");
+        }
+      });
+    }
+  
+    // Event listeners for buttons
+    document.querySelector(".prev").addEventListener("click", () => {
+      let index = [...items].findIndex((item) =>
+        item.classList.contains("active")
+      );
+      showItem((index - 1 + items.length) % items.length);
+    });
+  
+    document.querySelector(".next").addEventListener("click", () => {
+      let index = [...items].findIndex((item) =>
+        item.classList.contains("active")
+      );
+      showItem((index + 1) % items.length);
+    });
+  
+    // Event listeners for dots
+    dots.forEach((dot) => {
+      dot.addEventListener("click", () => {
+        let index = parseInt(dot.dataset.index);
+        showItem(index);
+      });
+    });
   });
-};
 
-document.addEventListener("scroll", () => {
-  console.log("Scroll Height: ", scrollContainer().scrollHeight);
-  console.log("Client Height: ", scrollContainer().clientHeight);
 
-  const scrolledPercentage =
-    (scrollContainer().scrollTop /
-      (scrollContainer().scrollHeight - scrollContainer().clientHeight)) *
-    100;
 
-  pageProgressBar.style.width = `${scrolledPercentage}%`;
-
-  if (scrollContainer().scrollTop > showOnPx) {
-    backToTopButton.classList.remove("hidden");
-  } else {
-    backToTopButton.classList.add("hidden");
-  }
-});
-
-backToTopButton.addEventListener("click", goToTop);
-
-// <!-- progress-bar -->
 
 
