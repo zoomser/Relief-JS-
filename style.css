@@ -2109,13 +2109,17 @@ nav{
     height: 380px;
 }
 .mixail_txt{
-    margin: 5px 50px 0 20px;
-    color: #472608;
+    margin: 5px 50px 0 30px;
+    color: #f3cece;
+}
+.carusel_pre{
+    margin: 2px 260px 0 0;
+    color: #f3cece;
 }
 .land_reviews1{
     margin: 5px 20px 0 20px;
     width: 334px;
-    color: #4013e2;
+    color: #d6cef3;
     font-size: 13.5px;
 }
 .land_ellipse1{
@@ -2221,13 +2225,10 @@ width: 134px;
 .land_reviews_all{
     display: none;
 }
-.carusel_pre{
-    margin: 2px 220px 0 0;
-}
 .carousel-container {
     display: block;
-    width: 91%;
-    margin: 50px 20px;
+    width: 100%;
+    margin: 20px 0 0 0;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -2260,7 +2261,8 @@ width: 134px;
     text-transform: none;
     text-align: center;
     font-size: 12px;
-    background-color: rgba(18, 117, 98, 0.2);
+    background-color: rgba(2, 2, 2, 1);
+    border-radius: 15px;
   }
   .carousel-container .carousel .item.active {
     opacity: 1;
@@ -2270,7 +2272,7 @@ width: 134px;
     padding: 1em 2em;
     position: absolute;
     transform: translateY(-50%);
-    top: 104%;
+    top: 98%;
     outline: none;
     border: none;
     cursor: pointer;
@@ -2288,11 +2290,11 @@ width: 134px;
     transform: translateY(-50%) scale(0.96);
   }
   .carousel-container .prev {
-    left: -5%;
+    left: 2%;
     
   }
   .carousel-container .next {
-    right: -5%;
+    right: 2%;
   }
   .carousel-container .dots {
     display: flex;
@@ -2300,15 +2302,21 @@ width: 134px;
     justify-content: center;
     gap: 10px;
   }
+  .dots{
+    position: relative;
+    bottom: 15px;
+    
+  }
   .carousel-container .dots .dot {
     cursor: pointer;
     height: 10px;
     width: 10px;
-    background-color: #242421;
+    background-color: #fdfdfd;
     transition: background-color 0.2s ease;
+    border-radius: 50%;
   }
   .carousel-container .dots .dot.active, .carousel-container .dots .dot:hover {
-    background-color: #ffffe6;
+    background-color: #fc0101;
   }
 
   /* <!-- carousel end --> */
