@@ -267,12 +267,12 @@ height: 11px;
     margin-top: 33px;
 }
 .main_logo_palma{
-    background-image: url("img/Логотип.png");
+    background-image: url("img/Логотип\ gold\ \(1\).png");
     width: 39px;
     height: 32px;
 }
 .main_line_palma{
-    background: #34642C;
+    background: #FFDF9E;;
     width: 340px;
     height: 1px;
 }
@@ -347,7 +347,7 @@ height: 11px;
     margin-top: 45px;
 }
 .our_line_txt{
-    color: #34642C;
+    color: #FFDF9E;
     font-family: Merriweather;
     font-size: 18px;
     font-style: normal;
@@ -355,15 +355,16 @@ height: 11px;
     line-height: normal;
 }
 .our_line{    
-    border-bottom: 1px solid #34642C;
+    border-bottom: 1px solid #FFDF9E;;
     width: min(100%,881px);
     margin-top: -5px;
 }
 .our_line_logo{
-    background: url("img/Логотип.png");
+    background: url("img/Логотип\ gold\ \(1\).png");
     width: 42.705px;
     height: 35.875px; 
     margin-left: 840px;
+    color: #FFDF9E;
 }
 .our_line_logo_blok{
     display: flex;
@@ -899,13 +900,15 @@ height: 11px;
 }
 .garden_fon3{
     border-radius: 5px;
-    border: 3px solid rgba(245, 115, 9, 0.25);
-    background: #889990ef;
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+    border: 3px solid rgba(245, 115, 9, 0.4);
+    background: radial-gradient(rgba(52, 181, 138, 0.92), rgba(47, 30, 111, 0.61));
+    
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 1);
     width: 1058px;
     height: 490px;
     margin-left: 190px;
     margin-top: 49px;
+    
 }
 .garden_season{
     display: flex;
@@ -1158,7 +1161,7 @@ gap: 23px;
     margin-left: 160px;
 }
 .land_line_txt{
-    color: #34642C;
+    color: #FFDF9E;
     font-family: Merriweather;
     font-size: 18px;
     font-style: normal;
@@ -1173,13 +1176,13 @@ gap: 23px;
     margin-bottom: 4px;
 }
 .land_line_logo{
-    background: url("img/Логотип.png");
+    background: url("img/Логотип\ gold\ \(1\).png");
     width: 39px;
     height: 32px;
     margin-left: 890px;
 }
 .land_line{
-    border-bottom: 1px solid #34642C;
+    border-bottom: 1px solid #FFDF9E;;
     width: 935px;
 }
 .land_rectangle{
@@ -1246,17 +1249,17 @@ gap: 23px;
     margin-top: 33px;
 }
 .land_logo_palma{
-    background-image: url("img/Логотип.png");
+    background-image: url("img/Логотип\ gold\ \(1\).png");
     width: 39px;
     height: 32px;
 }
 .land_line_palma{
-    background: #34642C;
+    background: #FFDF9E;
     width: 340px;
     height: 1px;
 }
 .land_txt_palma{
-    color: #34642C;
+    color: #FFDF9E;
     font-family: Merriweather;
     font-size: 18px;
     font-style: normal;
@@ -1329,8 +1332,9 @@ footer{
     position: relative;
     width: min(100%,1440px);
     height: 357px;
-    background: #5A554D url("img/трава\ 1.png") bottom no-repeat;
+    background: linear-gradient(rgba(211, 139, 24, 0.98), rgba(90, 85, 77, 0.2)), url("img/трава\ 1.png") bottom no-repeat;
     margin-top: 79px;
+    box-shadow: 0px 0px 190px 60px rgba(211, 139, 24, 0.8);
 }
 .footer_contacts_txt{
     color: #FFF;
@@ -1461,11 +1465,12 @@ footer{
     color: #109bf1;
   }
   .progress-bar {
-    height: 1rem;
+    height: 0.2rem;
     background: white;
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 3;
   }
 
   /* <!-- progress-bar --> */
@@ -1487,12 +1492,14 @@ footer{
     margin: 20px 10px;
     position: fixed;
     right: 340px;
-    top: -1px;
+    top: -5px;
+    z-index: 2;
 }
 nav{
     width: 412px;
     height: 46px; 
     position: fixed;
+    z-index: 2;
 }
 .nav_ul{
     display: none; 
@@ -1514,6 +1521,7 @@ nav{
     position: absolute;
     left: 200px;
     top: 47px;
+    z-index: 4;
 }
 .show{
     display: flex;
@@ -2056,7 +2064,7 @@ nav{
 }
 .land_line_txt{
     font-size: 14px;
-    margin-left: 10px;
+    margin-left: 21px;
 }
 .land_line_logo_blok{
     width: 250px;
@@ -2268,6 +2276,7 @@ width: 134px;
   .carousel-container .carousel .item.active {
     opacity: 1;
     display: block;
+    z-index: 0;
   }
   .carousel-container .btn {
     padding: 1em 2em;
