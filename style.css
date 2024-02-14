@@ -1485,13 +1485,14 @@ footer{
     flex-direction: column;
     gap: 5px;
     margin: 20px 10px;
-    position: absolute;
+    position: fixed;
     right: 340px;
-    top: -5px;
+    top: -1px;
 }
 nav{
     width: 412px;
     height: 46px; 
+    position: fixed;
 }
 .nav_ul{
     display: none; 
