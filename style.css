@@ -1645,23 +1645,17 @@ nav{
     font-size: 12px;
     line-height: 16px;
     text-align: start;
+    overflow: scroll;
+    padding: 7px 5px 0 0;
+    
 }
 .about_text_blok{
     margin: 5px 16px;
     padding: 0;
     gap: 7px;
 }
-.about_text_span{
-    display: none;
-}
-.about_strela_down{
-    display: block;
-    position: absolute;
-    left: 196px;
-    top: 931px;
-    cursor: pointer;
-    
-}
+
+
 .about_strela_down:hover{
     box-shadow: 0 0 5px 2px #FF7E35 ;
 }
@@ -2271,7 +2265,8 @@ width: 134px;
     text-align: center;
     font-size: 12px;
     background-color: rgba(2, 2, 2, 1);
-    border-radius: 15px;
+    border-end-end-radius: 50px;
+    border-start-start-radius: 30px;
   }
   .carousel-container .carousel .item.active {
     opacity: 1;
@@ -2301,10 +2296,17 @@ width: 134px;
   }
   .carousel-container .prev {
     left: 2%;
-    
+    border-top-left-radius: 20px;
+    border-end-start-radius: 20px;
+    border-top-right-radius: 5px;
+    border-end-end-radius: 5px;
   }
   .carousel-container .next {
     right: 2%;
+    border-top-right-radius: 20px;
+    border-end-end-radius: 20px;
+     border-top-left-radius: 5px;
+    border-end-start-radius: 5px;
   }
   .carousel-container .dots {
     display: flex;
