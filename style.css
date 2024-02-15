@@ -50,14 +50,14 @@ nav{
 .nav_p{
     color: #FFDF9E;
     font-family: Roboto;
-    font-size: 14px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
 }
 .nav_icon{
     width: 9px;
-height: 11px;
+    height: 11px;
 }
 .nav_icon2{
     width: 12.184px;
@@ -70,8 +70,11 @@ height: 11px;
     gap: 5px;
 }
 .nav_blok_tel{
-    margin-top: -35px;
-    margin-left: 60px;
+    width: 146px;
+    position: absolute;
+    left: 1200px;
+    top: 10px;
+    z-index: 4;
 }
 .nav_text_blago{
     width: 438px;
@@ -1518,10 +1521,10 @@ nav{
     text-align: left;
 }
 .nav_blok_tel{
-    position: absolute;
-    left: 200px;
-    top: 47px;
-    z-index: 4;
+    position: fixed;
+    left: 230px;
+    top: 10px;
+    z-index: 5;
 }
 .show{
     display: flex;
