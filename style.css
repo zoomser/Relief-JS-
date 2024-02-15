@@ -1633,21 +1633,21 @@ nav{
     width: 320px;
 }
 .about_blok{
-    width: 263px;
-    height: 310px; 
+    width: 283px;
+    height: 310px;
+    background: linear-gradient(#18503c00, #2f1e6f79); 
 }
 .about_text_company1{
     font-size: 14px;
 }
 .about_text_company2{
-    width: 230px;
-    height: 252px;
+    width: 250px;
+    height: 250px;
     font-size: 12px;
     line-height: 16px;
     text-align: start;
     overflow: scroll;
-    padding: 7px 5px 0 0;
-    
+    padding: 7px;
 }
 .about_text_blok{
     margin: 5px 16px;
@@ -1655,9 +1655,17 @@ nav{
     gap: 7px;
 }
 
-
+.about_strela_down{
+    display: none;
+    position: absolute;
+    left: 196px;
+    top: 934px;
+    cursor: pointer;
+    
+}
 .about_strela_down:hover{
-    box-shadow: 0 0 5px 2px #FF7E35 ;
+    border-bottom: 2px solid #FF7E35 ;
+    
 }
 .our_line{
     width: 181px;
