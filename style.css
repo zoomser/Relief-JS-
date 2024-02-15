@@ -1967,6 +1967,7 @@ nav{
     width: 265px;
     height: 108px;
     margin-left: 70px;
+    background: linear-gradient(#1d634b8c, #2f1e6f79);
 }
 .garden_fon2_txt{
     width: 238px;
@@ -2080,29 +2081,29 @@ nav{
 }
 .land_rectangle{
     width: 265px;
-    height: 114px;
+    height: 135px;
     margin-left: 73px;
+    background: linear-gradient(#2175598c, #2f1e6f79);
 }
 .land_rectangle_txt{
     font-size: 12px;
     width: 246px;
-    height: 93px;
+    height: 98px;
     line-height: 14px;
     padding: 13px;
-}
-.land_span2{
-    display: none;
+    overflow: scroll;
 }
 
+
 .land_pic_all{
-    width: 265px;
-    margin-left: 75px;
+    width: 465px;
+    height: 400px;
+    margin: 50px 0 0 0 ;
+    overflow: scroll;
 }
-.land_rec510_all{
-    display: none;
-}
+
 .land_arrow_down{
-    display: block;
+    display: none;
     margin-left: 195px;
     margin-top: 20px;
 }
@@ -2149,7 +2150,7 @@ nav{
     display: block;
 }
 .land_pic_all1{
-    width: 265px;
+    width: 354px;
     margin-left: 35px;
 }
 
